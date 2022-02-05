@@ -52,4 +52,8 @@ jobs:
 
     - name: Hook Blockchain CA Update workflow
       run: |
+<<<<<<< HEAD
         curl -XPOST -H "Authorization: token ${{ secrets.WORKFLOW_TRIGGERS }}" -H "Accept: application/vnd.github.v3+json" -H "Content-Type: application/json" https://api.github.com/repos/Chia-Network/chia-blockchain/actions/workflows/mozilla-ca-cert.yml/dispatches --data '{"ref": "main" }'
+=======
+        curl -XPOST -H "Authorization: token ${{ secrets.WORKFLOW_TRIGGERS }}" -H "Accept: application/vnd.github.v3+json" -H "Content-Type: application/json" https://api.github.com/repos/Chinilla/chinilla-blockchain/actions/workflows/mozilla-ca-cert.yml/dispatches
+>>>>>>> 1d09df4bb34e69b42d5ceb0bfbd9b77dd5383929
